@@ -4,7 +4,8 @@ import java.util.ArrayList;
 
 public class MethylationArray {
     private ArrayList<String> samples;
-    private ArrayList<MethylationData> data;
+    private ArrayList<
+            MethylationData> data;
 
     public MethylationArray() {
         this.data = new ArrayList<>();
@@ -39,5 +40,3 @@ public class MethylationArray {
                 '}';
     }
 }
-
-record MethylationData(String probe, String gene, ArrayList<Double> betaValues) {}
